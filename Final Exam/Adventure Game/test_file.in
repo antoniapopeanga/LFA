@@ -1,0 +1,66 @@
+#
+#
+#
+Alphabet:
+   0
+   1
+   2
+   3
+   4
+End
+#
+# comment  lines  ( skip  them)
+#
+ListAlphabet:
+   e
+   key
+   invitation
+   chefs_hat
+   spoon
+   sword
+   crown
+   ancient_coin
+   spell_book
+   magic_wand
+End
+#
+# comment  lines  ( skip  them)
+#
+States:
+   0
+   1
+   2
+   3
+   4
+   5
+   6
+   7
+   8
+   9
+End
+#
+# comment  lines  ( skip  them)
+#
+Start:
+    0
+End
+AcceptStates:
+  9
+End
+#
+#
+#
+Transitions:
+   0 0 e -> 1 e e
+   0 0 key -> 3 e e
+   1 0 chefs_hat -> 2 e e
+   1 0 e -> 4 e e
+   2 0 spoon -> 6 e e
+   3 0 sword -> 4 e e
+   3 0 crown -> 7 e e
+   4 0 ancient_coin -> 5 e e
+   4 0 e -> 8 e e
+   5 0 e -> 9 e e
+   7 0 e -> 8 e e
+   8 0 magic_wand -> 9 e e
+End
